@@ -1,0 +1,164 @@
+/*Обнулення*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  letter-spacing: 2%;
+  font-size: 16px;
+  line-height: 150%;
+  color: #434455;
+}
+h1{
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+}
+h2{
+  font-weight: 700;
+  font-size: 36px;
+}
+h3{
+  font-weight: 600;
+  font-size: 20px;
+}
+a{
+	color: #434455;
+}
+a:hover, a:focus{
+	color: #404BBF;
+}
+.event-btn{
+	padding: 16px 32px;
+	background-color: #4D5AE5 ;
+	line-height: 24px;
+	color: #ffffff; 
+	border-radius:4px ;
+}
+.event-btn:hover,
+.event-btn:focus{
+	background-color: #404BBF;
+	transition: all 1.8s ease;
+}
+.container{
+	margin: 0 auto;
+	width: 1158px;
+}
+.header-menu{
+	display: flex;
+	height: 72px;
+	justify-content: space-between;
+	align-items: center;
+}
+header{	
+	display: flex;
+	height: 72px;
+	justify-content: space-between;
+	align-items: center;
+}
+.section{
+	padding: 120px 0;
+}
+
+/* nav */
+.menu{
+	display: flex;
+}
+.top-logo{
+	margin-right: 76px;
+}
+.menu-list, .address-list{
+	display: flex;
+	gap: 40px;
+}
+/* Intro */
+.wrapper-img{
+	background: linear-gradient(224.92deg, rgba(19, 19, 51, 0.18) 17.19%, rgba(40, 39, 74, 0.81) 81.74%), url('/images/people-office.jpg') no-repeat center top / cover ;
+	padding: 188px 0;
+}
+.intro-text{
+	text-align: center;
+	margin-top: 188px;
+	color: #ffffff;
+	max-width:496px ;
+	margin: 0 auto;
+}
+.intro-block {
+	position: relative;
+	height: 300px; 
+  }
+.event-btn {
+	margin-top: 48px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+  /* Advantages */
+  .advantages-card{
+	display: flex;
+	flex-basis: calc((100% - 24px) / 4);
+	gap: 24px;
+  }
+  .icon-bgr{
+	padding: 20px 0;
+	background-color: #F4F4FD;
+	text-align: center;
+	border: 1px solid #8E8F99;
+	border-radius: 4px;
+  }
+  .advantages-item{
+	margin: 8px 0;
+  }
+  /* Team */
+  .team-wrapper{
+	background: #F4F4FD;
+  }
+  .team-block{
+	display: flex;
+	flex-basis: calc((100% - 24px) / 4);
+	gap: 24px;
+  }
+  .team-card{
+	border-radius: 4px;
+	background-color: #ffffff;
+	border: 1px solid #000; /* Межа елемента */
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+	  
+  }
