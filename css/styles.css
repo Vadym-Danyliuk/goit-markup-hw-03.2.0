@@ -59,6 +59,7 @@ h3{
   font-size: 20px;
 }
 a{
+	font-style: normal;
 	color: #434455;
 }
 a:hover, a:focus{
@@ -91,21 +92,30 @@ header{
 	height: 72px;
 	justify-content: space-between;
 	align-items: center;
+	border-bottom: 1px solid #E7E9FC;
 }
 .section{
-	padding: 120px 0;
+	padding-bottom: 120px;
 }
-
+span{
+	color: #4D5AE5;
+}
 /* nav */
 .menu{
 	display: flex;
 }
 .top-logo{
 	margin-right: 76px;
+	font-size: 24px;
 }
 .menu-list, .address-list{
 	display: flex;
 	gap: 40px;
+	
+}
+.menu-list, .top-logo{
+	font-weight: 600;
+	
 }
 /* Intro */
 .wrapper-img{
@@ -149,6 +159,11 @@ header{
   /* Team */
   .team-wrapper{
 	background: #F4F4FD;
+	padding: 120px 0;
+  }
+  .team-header, .portfolio-header{
+	text-align: center;
+	margin-bottom: 72px;
   }
   .team-block{
 	display: flex;
@@ -158,7 +173,87 @@ header{
   .team-card{
 	border-radius: 4px;
 	background-color: #ffffff;
-	border: 1px solid #000; /* Межа елемента */
-	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-	  
+	border: 1px solid #F4F4FD;
+	box-shadow:	 1px 1px 5px rgba(0, 0, 0, 0.5);
+	text-align: center;  
+	padding-bottom: 32px;
+	
+  }
+  .team-name{
+	margin-top: 35px;
+  }
+  .team-position{
+	margin-top: 8px;
+  }
+  .link-card{
+	padding-top: 8px;
+	gap: 24px;
+	display: flex;	
+	justify-content: center;
+  }
+  .link-icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	background-color: #4D5AE5;
+  }
+  .svg{
+	max-width: 16px;
+	display: block;
+  
+  }
+  .link-icon:hover,
+  .link-icon:focus{
+	transition: all 1s ease;
+	background-color: #31D0AA;
+  }
+  /*Portfolio*/
+  .portfolio-block{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px
+  }
+  .portfolio-card{
+	border: 1px solid #E7E9FC;
+	padding-bottom: 32px;
+  }
+  .portfolio-card:hover{
+	transition: all 1s ease;
+	box-shadow:	 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  .portfolio-name{
+	margin: 32px 16px 0  ;
+  }
+  .portfolio-descr{
+	margin: 8px 16px 0  ;
+  }
+  /* Footer */
+  .footer-wrapper{
+	padding-top:100px ;
+	padding-bottom: 100px;
+	background-color: #2E2F42;
+  }
+  .footer-content{
+	display: flex;
+	gap: 120px;
+  }
+  .footer-block{
+	flex: 1;
+  }
+  .footer-logo{
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 24px;
+  }
+  .footer-text, .footer-link{
+	color: #ffffff;
+  }
+  .link-card, .footer-text{
+	margin-top: 16px;
+  }
+  .link-card.foot{
+	justify-content: flex-start;
   }
