@@ -58,6 +58,9 @@ h3{
   font-weight: 600;
   font-size: 20px;
 }
+img{
+	display: block;
+}
 a{
 	font-style: normal;
 	color: #434455;
@@ -66,11 +69,13 @@ a:hover, a:focus{
 	color: #404BBF;
 }
 .event-btn{
+	display: block;
 	padding: 16px 32px;
 	background-color: #4D5AE5 ;
-	line-height: 24px;
-	color: #ffffff; 
-	border-radius:4px ;
+	min-width: 169px;
+	height: 56px;
+	border: none;
+	border-radius: 4px;
 }
 .event-btn:hover,
 .event-btn:focus{
@@ -78,20 +83,20 @@ a:hover, a:focus{
 	transition: all 1.8s ease;
 }
 .container{
+	display: flex;
 	margin: 0 auto;
-	width: 1158px;
+	max-width: 1158px;
+	padding: 0 15px 
 }
 .header-menu{
 	display: flex;
 	height: 72px;
 	justify-content: space-between;
 	align-items: center;
+	width: 100%;
 }
 header{	
-	display: flex;
 	height: 72px;
-	justify-content: space-between;
-	align-items: center;
 	border-bottom: 1px solid #E7E9FC;
 }
 .section{
@@ -102,8 +107,9 @@ span{
 }
 /* nav */
 .menu{
-	display: flex;
+	display: flex;	
 }
+
 .top-logo{
 	margin-right: 76px;
 	font-size: 24px;
@@ -118,6 +124,9 @@ span{
 	
 }
 /* Intro */
+.section{
+	padding: 188px 0 
+}
 .wrapper-img{
 	background: linear-gradient(224.92deg, rgba(19, 19, 51, 0.18) 17.19%, rgba(40, 39, 74, 0.81) 81.74%), url('/images/people-office.jpg') no-repeat center top / cover ;
 	padding: 188px 0;
@@ -125,21 +134,12 @@ span{
 .intro-text{
 	text-align: center;
 	margin-top: 188px;
-	color: #ffffff;
+	color: #2b2b2b;
 	max-width:496px ;
 	margin: 0 auto;
 }
-.intro-block {
-	position: relative;
-	height: 300px; 
-  }
-.event-btn {
-	margin-top: 48px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-  }
+
+
   /* Advantages */
   .advantages-card{
 	display: flex;
